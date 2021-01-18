@@ -87,7 +87,7 @@ class Responder
     def handle_message(event)
         author = event.author
 
-        $gamer_rules.each do |rule|
+        $target_rules.each do |rule|
             if rule.match? author then
                 return handle_mention event
             end

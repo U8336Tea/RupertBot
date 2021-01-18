@@ -9,7 +9,7 @@ require_relative 'dm'
 
 config_file = File.open ARGV[0]
 $config = YAML.load config_file.read
-$gamer_rules = load_rules $config['gamer_rules']
+$target_rules = load_rules $config['target_rules']
 $blacklist = load_rules $config['blacklist']
 
 $client = Discordrb::Bot.new(token: $config['token'], type: :user)

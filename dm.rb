@@ -43,5 +43,5 @@ def handle_target(event)
 
     server = command[1]
     return if server.to_i != $server.id && server.downcase != $server.name.downcase
-    $gamer_rules = [Rule.new(type: :user, id: command[2])]
+    $target_rules = [Rule.new(type: :user, id: command[2])]
 end

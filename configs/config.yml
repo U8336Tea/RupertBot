@@ -3,7 +3,7 @@ token: "Token goes here."
 server: 0
 channel: 0
 timeout: 3200 # seconds
-sleep_time: null 
+sleep_time: '23:00' 
 target_rules:
 - type: role
   id: 0

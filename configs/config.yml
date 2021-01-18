@@ -1,0 +1,16 @@
+---
+token: "Token goes here."
+server: 0
+channel: 0
+timeout: 3200 # seconds
+sleep_time: null 
+gamer_rules:
+- type: role
+  id: 0
+
+blacklist:
+- type: user
+  id: 0
+
+- type: role
+  id: 0

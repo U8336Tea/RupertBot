@@ -92,7 +92,7 @@ ANTI GAMERS, RISE UP!'
 def get_reply(message)
     content = message.content.downcase
     if content.include? ' bot' then
-        return "Still not a bot, and you can still fuck off."
+        return "Stop saying I'm a bot and get an actual argument for once in your goddamn life."
     elsif !content.match?(/[a-zA-Z]/) then # User sent a message like "..."
         return nil
     elsif content.include?('valid argument') || content.include?('actual argument') then

@@ -81,6 +81,8 @@ class Responder
             sleep rand(0..2)
 
             message.reply!(reply, mention_user: true)
+
+            sleep channel.slowmode_rate
         end
     end
 

@@ -4,9 +4,9 @@ class Responder
     def initialize(client, timeout)
         @client = client
         @timeout = timeout
-        @nonce_mutex = Mutex.new
+        @id_mutex = Mutex.new
         @typing_mutex = Mutex.new
-        @current_nonce = nil
+        @current_id = nil
         @handlers = []
     end
 
@@ -49,9 +49,9 @@ class Responder
         @message_received = true
         
         # Make sure we don't respond to the same message twice.
-        @nonce_mutex.synchronize do
-            return if @current_nonce == event.message.nonce
-            @current_nonce = event.message.nonce
+        @id_mutex.synchronize do
+            return if @current_id == event.message.id
+            @current_id = event.message.id
         end
 
         author = event.author

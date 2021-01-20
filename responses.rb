@@ -15,7 +15,9 @@ INITIAL_MESSAGES = [
     "G\\*mers are going to the lowest depths of hell.",
     "Get a life and stop g\\*ming.",
     "Dear g\\*mers: Go outside for once instead of hating minorities.",
-    "Fortnite is objectively better than Mein Kraft because Mein Kraft was written by Hitler."
+    "Fortnite is objectively better than Mein Kraft because Mein Kraft was written by Hitler.",
+    "G\\*mers: please shut the fuck up for once. I mean seriously, you never fucking shut up.",
+    "G\\*mers: Please get an actual argument so we don't have to keep fucking repeating ourselves."
 ]
 
 RESPONSES = [

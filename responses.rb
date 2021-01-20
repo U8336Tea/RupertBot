@@ -94,14 +94,14 @@ ANTI GAMERS, RISE UP!'
 BOT_RESPONSES = [
     "Not a bot. Try again.",
     "Stop calling me a robot.",
-    "Will you stop saying I'm a bot? Grow the hell up."
+    "Will you stop saying I'm a bot? Grow the hell up.",
     "I'm really getting tired of your incessant whining.",
     "Stop calling me a fucking robot.",
     "Quit saying I'm a bot and get an actual argument for once in your goddamn life.",
     "Whatever. :middle_finger:"
 ]
 
-BOT_COUNT = -1
+bot_count = -1
 
 def get_reply(message)
     content = message.content.downcase
@@ -112,8 +112,8 @@ def get_reply(message)
 
         return BOT_RESPONSES.sample if BOT_COUNT >= BOT_RESPONSES.length
         
-        BOT_COUNT += 1
-        return BOT_RESPONSES[BOT_COUNT]
+        bot_count += 1
+        return BOT_RESPONSES[bot_count]
     elsif !content.match?(/[a-zA-Z]/) then # User sent a message like "..."
         return nil
     elsif content.include?('valid argument') || content.include?('actual argument') then

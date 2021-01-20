@@ -91,6 +91,18 @@ But we resist. We will not fall. We will not perish. We will PREVAIL!
 
 ANTI GAMERS, RISE UP!'
 
+BOT_RESPONSES = [
+    "Not a bot. Try again.",
+    "Stop calling me a robot.",
+    "Will you stop saying I'm a bot? Grow the hell up."
+    "I'm really getting tired of your incessant whining.",
+    "Stop calling me a fucking robot.",
+    "Quit saying I'm a bot and get an actual argument for once in your goddamn life.",
+    "Whatever. :middle_finger:"
+]
+
+BOT_COUNT = -1
+
 def get_reply(message)
     content = message.content.downcase
     if content.length < 5 || rand(0..127) == 0 # Message too short (Or randomly selected)
@@ -98,7 +110,10 @@ def get_reply(message)
     elsif content.include? ' bot' then
         return RESPONSES.sample if rand(0..7) == 0
 
-        return "Stop saying I'm a bot and get an actual argument for once in your goddamn life."
+        return BOT_RESPONSES.sample if BOT_COUNT >= BOT_RESPONSES.length
+        
+        BOT_COUNT += 1
+        return BOT_RESPONSES[BOT_COUNT]
     elsif !content.match?(/[a-zA-Z]/) then # User sent a message like "..."
         return nil
     elsif content.include?('valid argument') || content.include?('actual argument') then

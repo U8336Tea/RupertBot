@@ -16,7 +16,7 @@ class Responder
         puts "Initial message: #{message}"
         channel.start_typing
         sleep rand(2..7)
-        channel.send_message message
+        channel.send_message(message, tts = true)
 
         @handlers.append @client.mention(in: channel) {|event|
             handle_mention event
@@ -80,7 +80,7 @@ class Responder
             channel.start_typing
             sleep rand(0..2)
 
-            message.reply!(reply, mention_user: true)
+            message.reply!(reply, mention_user: true, tts: true)
 
             sleep channel.slowmode_rate
         end

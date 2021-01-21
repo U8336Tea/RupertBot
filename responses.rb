@@ -107,7 +107,7 @@ bot_count = -1
 
 def get_reply(message)
     content = message.content.downcase
-    if content.length < 5 || rand(0..127) == 0 # Message too short (Or randomly selected)
+    if content.length < 3 || rand(0..127) == 0 # Message too short (Or randomly selected)
         return nil
     elsif content.include? ' bot' then
         return RESPONSES.sample if rand(0..7) == 0

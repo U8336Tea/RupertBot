@@ -80,7 +80,11 @@ class Responder
             channel.start_typing
             sleep rand(0..2)
 
-            message.reply!(reply, mention_user: true, tts: true)
+            begin
+                message.reply!(reply, mention_user: true, tts: true)
+            rescue
+                channel.send_message(reply, tts = true)
+            end
 
             sleep channel.slowmode_rate
         end

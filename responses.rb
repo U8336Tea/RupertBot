@@ -112,7 +112,7 @@ def get_reply(message)
     elsif content.include? ' bot' then
         return RESPONSES.sample if rand(0..7) == 0
 
-        return BOT_RESPONSES.sample if BOT_COUNT >= BOT_RESPONSES.length
+        return BOT_RESPONSES.sample if bot_count >= BOT_RESPONSES.length
         
         bot_count += 1
         return BOT_RESPONSES[bot_count]

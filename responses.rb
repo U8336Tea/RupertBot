@@ -67,6 +67,7 @@ RESPONSES = [
     "Shut the fuck up shut up shut up shut up",
     "Problem?",
     "Ok and? Didn't ask.",
+    "@everyone I LOVE MR. CRAP AND I'M NOT AFRAID TO SHOW IT!",
     "https://tenor.com/view/failure-fail-andy-the-office-gif-6079363",
     "https://tenor.com/view/spiderman-thats-it-gonna-cry-tobey-maguire-are-you-going-to-cry-gif-17698704",
     "https://tenor.com/view/cope-seethe-cope-cope-gif-19299672",

@@ -70,7 +70,8 @@ RESPONSES = [
     "https://tenor.com/view/failure-fail-andy-the-office-gif-6079363",
     "https://tenor.com/view/spiderman-thats-it-gonna-cry-tobey-maguire-are-you-going-to-cry-gif-17698704",
     "https://tenor.com/view/cope-seethe-cope-cope-gif-19299672",
-    "https://cdn.discordapp.com/attachments/743554243188752573/801709678471806976/image0.png"
+    "https://cdn.discordapp.com/attachments/743554243188752573/801709678471806976/image0.png",
+    "https://cdn.discordapp.com/attachments/743554243188752573/802780481178566716/video0.mov"
 ]
 
 TROLL_PASTA = 'No. This is not a satire.

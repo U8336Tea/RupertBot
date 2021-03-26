@@ -8,7 +8,7 @@ require_relative 'rule'
 require_relative 'dm'
 
 config_file = File.open ARGV[0]
-$config = YAML.load config_file.read
+$config = YAML.safe_load config_file.read
 $target_rules = load_rules $config['target_rules']
 $blacklist = load_rules $config['blacklist']
 
